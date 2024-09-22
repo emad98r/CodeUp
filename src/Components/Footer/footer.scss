@@ -1,0 +1,66 @@
+@import "../../Components/breakPoints.scss";
+footer {
+  width: 100%;
+  background-color: var(--dark-color);
+  padding: 2em 0;
+  @include breakPoints(mobile) {
+    padding: 2em 0 5.5em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 15em;
+      margin-bottom: 1em;
+    }
+    h2 {
+      color: var(--light-color);
+      font-size: 1.5em;
+      font-family: "400";
+      margin-bottom: 1em;
+    }
+    .S-M {
+      margin-bottom: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      a {
+        margin: 0 0.5em;
+        text-decoration: none;
+        color: var(--light-color);
+        background-color: var(--main-color);
+        border-radius: 50%;
+        width: 2.5em;
+        height: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        svg {
+          font-size: 1.5em;
+          color: var(--light-color);
+        }
+      }
+    }
+    p {
+      color: var(--light-color);
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.S-M a:first-of-type:hover {
+  background-color: #e20ab7;
+}
+.S-M a:nth-of-type(2):hover {
+  background-color: #180ae2;
+}
+.S-M a:nth-of-type(3):hover {
+  background-color: #0ae215;
+}
+.S-M a:nth-of-type(4):hover {
+  background-color: #e20a0a;
+}

@@ -1,0 +1,41 @@
+@import "../../Components/breakPoints.scss";
+.about-us {
+  width: 100%;
+  padding: 2em 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .info {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2em;
+      @include breakPoints(mobile) {
+        flex-direction: column;
+      }
+      @include breakPoints(small) {
+        flex-direction: column;
+      }
+      img {
+        width: 30em;
+        @include breakPoints(small) {
+          width: 50%;
+        }
+      }
+      p {
+        font-size: 1.5em;
+        line-height: 1.5;
+        text-align: justify;
+        @include breakPoints(mobile) {
+          padding: 0 0.5em;
+        }
+        @include breakPoints(small) {
+          padding: 0 0.5em;
+        }
+      }
+    }
+  }
+}

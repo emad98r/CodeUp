@@ -1,0 +1,22 @@
+@import "../breakPoints.scss";
+#title {
+  font-size: 3.5em;
+  margin: 0.5em auto;
+  font-family: "500";
+  color: var(--main-color);
+  text-align: center;
+  @include breakPoints(mobile) {
+    font-size: 2em;
+  }
+}
+
+.title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

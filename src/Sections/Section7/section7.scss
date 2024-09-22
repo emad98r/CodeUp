@@ -1,0 +1,106 @@
+@import "../../Components/breakPoints.scss";
+.section7 {
+  width: 100%;
+  padding: 2em 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section7-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: space-between;
+      @include breakPoints(mobile) {
+        flex-direction: column;
+        gap: 1em;
+      }
+      @include breakPoints(small) {
+        flex-direction: column;
+        gap: 1em;
+      }
+      img {
+        width: 50%;
+        @include breakPoints(mobile) {
+          width: 100%;
+        }
+        @include breakPoints(small) {
+          width: 50%;
+        }
+      }
+      form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include breakPoints(mobile) {
+          width: 100%;
+        }
+        @include breakPoints(small) {
+          width: 100%;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.5em 1em;
+          margin: 0.5em 0;
+          background-color: var(--light-color);
+          border: none;
+          outline: none;
+          font-size: 1.5em;
+          border-radius: 10px;
+          color: var(--main-color);
+          @include breakPoints(mobile) {
+            font-size: 1em;
+          }
+          @include breakPoints(small) {
+            font-size: 1em;
+          }
+        }
+        textarea {
+          resize: none;
+          margin-bottom: 1em;
+        }
+        .options-wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 2em;
+          @include breakPoints(mobile) {
+            flex-direction: column;
+            gap: 0;
+          }
+          select {
+            width: 100%;
+            padding: 0.5em 1em;
+            background-color: var(--light-color);
+            border: none;
+            outline: none;
+            font-size: 1.5em;
+            border-radius: 10px;
+            color: var(--main-color);
+            @include breakPoints(mobile) {
+              font-size: 1em;
+              margin: 0.5em 0;
+            }
+            @include breakPoints(small) {
+              font-size: 1em;
+              margin: 0.5em 0;
+            }
+          }
+        }
+        .buttons-wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 2em;
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../Components/breakPoints.scss";
+.Portfolio {
+  width: 100%;
+  padding: 2em 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .filter-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2em;
+      flex-wrap: wrap;
+      button {
+        padding: 1em 1.5em;
+        margin: 0 0.5em;
+        border: none;
+        outline: none;
+        background-color: var(--main-color);
+        color: var(--light-color);
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        @include breakPoints(mobile) {
+          padding: 0.5em 1em;
+          margin: 0.5em;
+        }
+        @include breakPoints(small) {
+          padding: 0.5em 1em;
+          margin: 0.5em;
+        }
+        &:hover {
+          background-color: var(--dark-color);
+        }
+      }
+    }
+    .projects-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      a {
+        width: 45%;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(0.9);
+        }
+        @include breakPoints(mobile) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

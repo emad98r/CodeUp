@@ -1,0 +1,62 @@
+@import "../../Components/breakPoints.scss";
+.section5 {
+  width: 100%;
+  padding: 2em 0;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .list-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5em;
+      flex-wrap: wrap;
+      @include breakPoints(mobile) {
+        flex-direction: column;
+      }
+      ul {
+        width: 50%;
+        @include breakPoints(mobile) {
+          width: 90%;
+        }
+        @include breakPoints(small) {
+          width: 60%;
+        }
+        li {
+          margin: 0.5em 0;
+          font-size: 1.5em;
+          padding-right: 1em;
+
+          list-style: none;
+          line-height: 1.5;
+          position: relative;
+          width: 100%;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.5em;
+            right: -1em;
+            width: 0.5em;
+            height: 0.5em;
+            border: 5px solid var(--main-color);
+            border-radius: 50%;
+            @include breakPoints(mobile) {
+              right: -0.5em;
+            }
+          }
+          b {
+            color: var(--main-color);
+          }
+        }
+      }
+      img {
+        width: 30%;
+        @include breakPoints(small) {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

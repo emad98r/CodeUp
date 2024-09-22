@@ -1,0 +1,210 @@
+@import "../../Components/breakPoints.scss";
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  .large-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: moving-large 0.5s ease-in-out;
+
+    .header-vid {
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .info {
+      width: 100%;
+      height: 100vh;
+      background-color: #0f8aaf68;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      @include breakPoints(mobile) {
+        justify-content: center;
+      }
+      @include breakPoints(small) {
+        justify-content: center;
+      }
+
+      img {
+        width: 30em;
+        @include breakPoints(mobile) {
+          width: 10em;
+        }
+      }
+
+      h1 {
+        font-size: 5em;
+        text-align: center;
+        color: var(--light-color);
+        margin-bottom: 0.5em;
+        @include breakPoints(mobile) {
+          font-size: 3em;
+        }
+      }
+
+      nav {
+        width: 50%;
+        @include breakPoints(mobile) {
+          width: 100%;
+        }
+        @include breakPoints(small) {
+          width: 100%;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          @include breakPoints(mobile) {
+            flex-direction: column;
+          }
+
+          li {
+            list-style: none;
+            padding: 0.5em 1em;
+            font-size: 1.5em;
+            color: var(--light-color);
+            font-family: "700";
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border-radius: 15px;
+
+            &:hover {
+              color: var(--dark-color);
+              background-color: var(--light-color);
+            }
+          }
+        }
+      }
+
+      .mouse {
+        width: 5em;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .small-header {
+    width: 100%;
+    height: 7em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    animation: moving-small 0.5s ease-in-out;
+
+    .header-vid {
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .info {
+      width: 100%;
+      height: 7em;
+      background-color: #0f8aaf68;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+      }
+
+      img {
+        width: 10em;
+        @include breakPoints(mobile) {
+          width: 7em;
+        }
+      }
+
+      nav {
+        width: 70%;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+
+          li {
+            list-style: none;
+            padding: 0.5em 1em;
+            font-size: 1.5em;
+            color: var(--light-color);
+            font-family: "400";
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border-radius: 15px;
+            @include breakPoints(mobile) {
+              padding: 0.5em;
+              font-size: 1em;
+              font-family: "700";
+            }
+            @include breakPoints(small) {
+              font-size: 1.3em;
+              font-family: "700";
+            }
+
+            &:hover {
+              color: var(--dark-color);
+              background-color: var(--light-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes moving-small {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moving-large {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  transform: translateY(-50px);
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

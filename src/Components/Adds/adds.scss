@@ -1,0 +1,36 @@
+.adds {
+  width: 100%;
+  margin: 1em;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .adds-wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+      gap: 2em;
+      .adds-item {
+        border: 2px solid var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 1.5em;
+        border-radius: 30px;
+        box-shadow: 1px 0px 10px #b5b5b5;
+        h3 {
+          color: var(--dark-color);
+          margin-bottom: 0.5em;
+          font-size: 1.5em;
+          text-align: center;
+        }
+        p {
+          color: var(--main-color);
+          font-size: 2em;
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}

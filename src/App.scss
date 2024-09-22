@@ -1,0 +1,84 @@
+@import "./Components/breakPoints.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "500";
+}
+
+:root {
+  // colors -------------------
+  --main-color: #0f89af;
+  --light-color: #eae8e8;
+  --dark-color: #222121;
+}
+
+@font-face {
+  font-family: "700";
+  src: url(./assets/fonts/Beiruti-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "600";
+  src: url(./assets/fonts/Beiruti-SemiBold.ttf);
+}
+@font-face {
+  font-family: "500";
+  src: url(./assets/fonts/Beiruti-Medium.ttf);
+}
+@font-face {
+  font-family: "400";
+  src: url(./assets/fonts/Beiruti-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "300";
+  src: url(./assets/fonts/Beiruti-ExtraLight.ttf);
+}
+
+body {
+  background-color: white;
+  direction: rtl;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @include breakPoints(mobile) {
+    width: 100%;
+    padding: 0 1em;
+  }
+  @include breakPoints(small) {
+    width: 90%;
+    padding: 0 1em;
+  }
+}
+
+.types-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  .types {
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: var(--light-color);
+    font-family: "400";
+    background-color: var(--dark-color);
+    margin: 0.5em;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    &:hover {
+      background-color: var(--main-color);
+      color: var(--light-color);
+    }
+  }
+}
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #c7c7c7;
+  margin-bottom: 1.5em;
+}
