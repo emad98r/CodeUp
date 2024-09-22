@@ -1,9 +1,9 @@
-import Adds from "../../../Components/Adds/Adds";
+import Adds from "../../Components/Adds/Adds";
 import BasicPlan, {
   CompaniesPlan,
   SpecialPlan,
-} from "../../../Components/PricePlans/PricePlans";
-import Title from "../../../Components/Titles/Title";
+} from "../../Components/PricePlans/PricePlans";
+import Title from "../../Components/Titles/Title";
 import "./section6.scss";
 
 function Section6() {

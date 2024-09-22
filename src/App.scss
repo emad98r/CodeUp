@@ -60,10 +60,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1em;
+  width: 100%;
   .types {
     text-decoration: none;
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 1em;
     color: var(--light-color);
     font-family: "400";
     background-color: var(--dark-color);

@@ -87,7 +87,7 @@
       @include breakPoints(mobile) {
         width: 80%;
       }
-      @include breakPoints(mobile) {
+      @include breakPoints(small) {
         width: 40%;
       }
     }

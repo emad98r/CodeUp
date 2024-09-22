@@ -10,6 +10,7 @@ import WhatsappBut from "./Components/WhatsappButton/WhatsappBut";
 import Logos from "./Pages/Logos/Logos";
 import Poster from "./Pages/Posters/Poster";
 import Websites from "./Pages/Websites/Websites";
+import OrderYourPlan from "./Pages/OrderYourPlan/OrderYourPlan";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Logos" element={<Logos />} />
           <Route path="/Posters" element={<Poster />} />
           <Route path="/Websites" element={<Websites />} />
+          <Route path="/OrderYourPlan" element={<OrderYourPlan />} />
         </Routes>
         <WhatsappBut />
 

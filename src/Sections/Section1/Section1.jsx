@@ -13,7 +13,7 @@ function Section1() {
             حيث الإبداع والتقنية يلتقيان لتصميم وتطوير مواقع إلكترونية مخصصة
             تعكس هويتك التجارية، وتفتح لك آفاقًا جديدة في العالم الرقمي.
           </h1>
-          <Button text="بماذا نتميز" link="/" />
+          <Button text="بماذا نتميز" link="/Portfolio" />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#ffffff"

@@ -28,7 +28,7 @@ function ContactUs() {
               placeholder="البريد الالكتروني"
               required
             />
-            <input type="text" placeholder="الرقم" />
+            <input type="tel" placeholder="الرقم" />
             <div className="options-wrapper"></div>
             <textarea
               rows={7}

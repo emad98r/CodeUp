@@ -16,7 +16,7 @@ function BasicPlan() {
         <li>روابط الوسائط الاجتماعية</li>
         <li>نطاق مجاني واستضافة لمدة عام واحد</li>
       </ul>
-      <Button text="اختيار" link="/ContactUs" />
+      <Button text="اختيار" link="/OrderYourPlan" />
     </div>
   );
 }
@@ -39,7 +39,7 @@ function SpecialPlan() {
         <li>دعم لمدة شهر قابله للتمديد</li>
         <li>نطاق مجاني واستضافة لمدة عام واحد</li>
       </ul>
-      <Button text="اختيار" link="/ContactUs" />
+      <Button text="اختيار" link="/OrderYourPlan" />
     </div>
   );
 }
@@ -61,7 +61,7 @@ function CompaniesPlan() {
         <li>تقارير أداء شهرية</li>
         <li>دعم لمدة 3 أشهر قابل للتمديد</li>
       </ul>
-      <Button text="اختيار" link="/ContactUs" />
+      <Button text="اختيار" link="/OrderYourPlan" />
     </div>
   );
 }

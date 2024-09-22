@@ -31,17 +31,6 @@
         position: relative;
         flex: 1 0 15em;
         margin: 0 1em;
-        @include breakPoints(mobile) {
-          &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: -2em;
-            border: 1.5px dotted var(--main-color);
-            width: 1px;
-            height: 100%;
-          }
-        }
 
         .img-wrapper {
           width: 7em;

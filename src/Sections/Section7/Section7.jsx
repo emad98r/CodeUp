@@ -20,14 +20,14 @@ function Section7() {
           >
             <input type="hidden" name="_template" value="table" />
 
-            <input type="text" name="name" placeholder="الاسم" required />
+            <input type="tel" name="name" placeholder="الاسم" required />
             <input
               type="email"
               name="email"
               placeholder="البريد الالكتروني"
               required
             />
-            <input type="text" placeholder="الرقم" />
+            <input type="text" placeholder="الرقم" required />
             <div className="options-wrapper">
               <select name="الباقات" id="plans">
                 <option hidden value="الباقات">

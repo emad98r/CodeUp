@@ -23,7 +23,7 @@ function Adds() {
             <div key={item.id} className="adds-item">
               <h3>{item.title}</h3>
               <p>{item.price}</p>
-              <Button text="اختيار" link="/ContactUs" />
+              <Button text="اختيار" link="/OrderYourPlan" />
             </div>
           ))}
         </div>
