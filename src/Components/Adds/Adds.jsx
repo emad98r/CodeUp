@@ -22,7 +22,7 @@ function Adds() {
           {AddsData.map((item) => (
             <div key={item.id} className="adds-item">
               <h3>{item.title}</h3>
-              <p>{item.price}</p>
+              {/* <p>{item.price}</p> */}
               <Button text="اختيار" link="/OrderYourPlan" />
             </div>
           ))}

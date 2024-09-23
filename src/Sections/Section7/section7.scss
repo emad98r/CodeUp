@@ -52,6 +52,7 @@
           font-size: 1.5em;
           border-radius: 10px;
           color: var(--main-color);
+          direction: rtl;
           @include breakPoints(mobile) {
             font-size: 1em;
           }
