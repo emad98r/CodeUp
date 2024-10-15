@@ -18,8 +18,9 @@ import p17 from "../assets/imgs/p17.png";
 import p18 from "../assets/imgs/p18.png";
 import p19 from "../assets/imgs/p19.png";
 import p20 from "../assets/imgs/p20.png";
-import p21 from "../assets/imgs/p21.png";
-import p22 from "../assets/imgs/p22.png";
+// import p21 from "../assets/imgs/p21.png";
+// import p22 from "../assets/imgs/p22.png";
+import p23 from "../assets/imgs/p23.png";
 
 const projectsData = [
   {
@@ -142,17 +143,23 @@ const projectsData = [
     img: p20,
     webLink: "https://coffeetime2024.netlify.app/",
   },
+  // {
+  //   id: 21,
+  //   category: "food",
+  //   img: p21,
+  //   webLink: "https://alshaibaniroyal.netlify.app/",
+  // },
+  // {
+  //   id: 22,
+  //   category: "company",
+  //   img: p22,
+  //   webLink: "https://mopic-taiz.netlify.app/",
+  // },
   {
-    id: 21,
-    category: "food",
-    img: p21,
-    webLink: "https://alshaibaniroyal.netlify.app/",
-  },
-  {
-    id: 22,
-    category: "company",
-    img: p22,
-    webLink: "https://mopic-taiz.netlify.app/",
+    id: 23,
+    category: "shop",
+    img: p23,
+    webLink: "https://alanaqah.netlify.app/",
   },
 ];
 
