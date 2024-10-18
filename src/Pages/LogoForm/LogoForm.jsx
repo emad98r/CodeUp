@@ -34,12 +34,7 @@ function LogoForm() {
             placeholder="ما هو اسم الشعار / المنشأة ؟"
             required
           />
-          <input
-            type="text"
-            name="logo-title"
-            placeholder="ما هو اسم الشعار / المنشأة ؟"
-            required
-          />
+
           <input
             type="text"
             name="logo-idea"
