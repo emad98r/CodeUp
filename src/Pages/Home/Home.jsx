@@ -4,7 +4,6 @@ import Section2 from "../../Sections/Section2/Section2";
 import Section3 from "../../Sections/Section3/Section3";
 import Section4 from "../../Sections/Section4/Section4";
 import Section5 from "../../Sections/Section5/Section5";
-// import CommentsSection from "../../Sections/CommentsSection/CommentsSection";
 import PostPage from "../../Sections/CommentsSection/CommentsSection";
 import Section7 from "../../Sections/Section7/Section7";
 

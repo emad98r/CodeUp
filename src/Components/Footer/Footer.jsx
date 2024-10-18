@@ -5,8 +5,8 @@ import {
   FaSquareFacebook,
   FaSquareWhatsapp,
 } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-
+import { MdEmail, MdDesignServices } from "react-icons/md";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
@@ -26,6 +26,9 @@ function Footer() {
           <a href="mailto:codeup-yem@outlook.com">
             <MdEmail />
           </a>
+          <Link to="/LogoForm">
+            <MdDesignServices />
+          </Link>
         </div>
         <p>جميع الحقوق محفوظة 2024 @ CodeUp Agency</p>
       </div>

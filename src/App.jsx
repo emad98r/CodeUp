@@ -11,7 +11,7 @@ import Logos from "./Pages/Logos/Logos";
 import Poster from "./Pages/Posters/Poster";
 import Websites from "./Pages/Websites/Websites";
 import OrderYourPlan from "./Pages/OrderYourPlan/OrderYourPlan";
-
+import LogoForm from "./Pages/LogoForm/LogoForm";
 function App() {
   return (
     <>
@@ -27,6 +27,7 @@ function App() {
           <Route path="/Posters" element={<Poster />} />
           <Route path="/Websites" element={<Websites />} />
           <Route path="/OrderYourPlan" element={<OrderYourPlan />} />
+          <Route path="/LogoForm" element={<LogoForm />} />
         </Routes>
         <WhatsappBut />
 

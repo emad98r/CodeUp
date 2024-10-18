@@ -1,0 +1,234 @@
+@import "../../Components/breakPoints.scss";
+.logo-form {
+  width: 100%;
+  border-radius: 20px;
+  .large-pic {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    @include breakPoints(mobile) {
+      height: 30dvh;
+    }
+    @include breakPoints(small) {
+      height: 30dvh;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    padding: 2em;
+    @include breakPoints(mobile) {
+      padding: 0;
+      width: 95%;
+    }
+    @include breakPoints(small) {
+      padding: 0;
+    }
+
+    form {
+      border-radius: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2em;
+      // background-color: #bababa;
+      color: var(--light-color);
+      padding: 2em 1em;
+      input {
+        width: 48%;
+        padding: 1em 0.5em;
+        direction: rtl;
+        font-size: 1.2em;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: var(--main-color);
+        background-color: gainsboro;
+        @include breakPoints(mobile) {
+          width: 100%;
+        }
+        @include breakPoints(small) {
+          width: 45%;
+        }
+      }
+      p {
+        margin-bottom: 1em;
+        font-size: 1.2em;
+        color: var(--main-color);
+        @include breakPoints(mobile) {
+          text-align: center;
+        }
+      }
+      .age-target {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 2em;
+        @include breakPoints(mobile) {
+          flex-direction: column;
+        }
+        label {
+          font-size: 1.2em;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: var(--dark-color);
+          @include breakPoints(mobile) {
+            margin: 0.5em;
+          }
+          input {
+            width: max-content;
+            margin-left: 0.5em;
+          }
+        }
+      }
+      .upload-liked-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        section {
+          display: flex;
+          flex-direction: row;
+          @include breakPoints(mobile) {
+            flex-direction: column;
+          }
+          gap: 2em;
+          input {
+            background-color: gainsboro;
+          }
+        }
+      }
+      .logo-styles {
+        width: 100%;
+        .styles-wrapper {
+          display: flex;
+          gap: 2em;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          @include breakPoints(mobile) {
+            align-items: flex-start;
+          }
+        }
+        label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 7em;
+            border-radius: 15px;
+          }
+          section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .checkbox-wrapper-31 {
+              margin: 0.5em 0;
+            }
+            h4 {
+              width: fit-content;
+              word-spacing: 1px;
+              word-break: normal;
+              max-width: 10em;
+              text-align: center;
+              color: var(--main-color);
+              @include breakPoints(mobile) {
+                width: 7em;
+              }
+            }
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 1em 0.5em;
+        direction: rtl;
+        font-size: 1.2em;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: gainsboro;
+      }
+      .buttons {
+        width: 100%;
+        display: flex;
+        gap: 2em;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.checkbox-wrapper-31:hover .check {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 1em;
+}
+.checkbox-wrapper-31 .background {
+  fill: var(--light-color);
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 .stroke {
+  fill: none;
+  stroke: var(--light-color);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 .check {
+  fill: none;
+  stroke: var(--light-color);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke-dashoffset: 22;
+  stroke-dasharray: 22;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+.checkbox-wrapper-31 input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  -appearance: none;
+  -webkit-appearance: none;
+}
+.checkbox-wrapper-31 input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+.checkbox-wrapper-31 input[type="checkbox"]:checked + svg .background {
+  fill: var(--main-color);
+}
+.checkbox-wrapper-31 input[type="checkbox"]:checked + svg .stroke {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-31 input[type="checkbox"]:checked + svg .check {
+  stroke-dashoffset: 0;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
