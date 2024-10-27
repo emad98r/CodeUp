@@ -4,98 +4,98 @@ header {
   width: 100%;
   position: relative;
   z-index: 10;
-  .large-header {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    animation: moving-large 0.5s ease-in-out;
+  // .large-header {
+  //   width: 100%;
+  //   height: 100vh;
+  //   position: relative;
+  //   animation: moving-large 0.5s ease-in-out;
 
-    .header-vid {
-      position: absolute;
-      width: 100%;
-      z-index: -1;
-      height: 100vh;
-      object-fit: cover;
-    }
+  //   .header-vid {
+  //     position: absolute;
+  //     width: 100%;
+  //     z-index: -1;
+  //     height: 100vh;
+  //     object-fit: cover;
+  //   }
 
-    .info {
-      width: 100%;
-      height: 100vh;
-      background-color: #0f8aaf68;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      @include breakPoints(mobile) {
-        justify-content: center;
-      }
-      @include breakPoints(small) {
-        justify-content: center;
-      }
+  //   .info {
+  //     width: 100%;
+  //     height: 100vh;
+  //     background-color: #0f8aaf68;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: flex-start;
+  //     @include breakPoints(mobile) {
+  //       justify-content: center;
+  //     }
+  //     @include breakPoints(small) {
+  //       justify-content: center;
+  //     }
 
-      img {
-        width: 30em;
-        @include breakPoints(mobile) {
-          width: 10em;
-        }
-      }
+  //     img {
+  //       width: 30em;
+  //       @include breakPoints(mobile) {
+  //         width: 10em;
+  //       }
+  //     }
 
-      h1 {
-        font-size: 5em;
-        text-align: center;
-        color: var(--light-color);
-        margin-bottom: 0.5em;
-        @include breakPoints(mobile) {
-          font-size: 3em;
-        }
-      }
+  //     h1 {
+  //       font-size: 5em;
+  //       text-align: center;
+  //       color: var(--light-color);
+  //       margin-bottom: 0.5em;
+  //       @include breakPoints(mobile) {
+  //         font-size: 3em;
+  //       }
+  //     }
 
-      nav {
-        width: 50%;
-        @include breakPoints(mobile) {
-          width: 100%;
-        }
-        @include breakPoints(small) {
-          width: 100%;
-        }
+  //     nav {
+  //       width: 50%;
+  //       @include breakPoints(mobile) {
+  //         width: 100%;
+  //       }
+  //       @include breakPoints(small) {
+  //         width: 100%;
+  //       }
 
-        ul {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          @include breakPoints(mobile) {
-            flex-direction: column;
-          }
+  //       ul {
+  //         display: flex;
+  //         flex-direction: row;
+  //         align-items: center;
+  //         justify-content: center;
+  //         @include breakPoints(mobile) {
+  //           flex-direction: column;
+  //         }
 
-          li {
-            list-style: none;
-            padding: 0.5em 1em;
-            font-size: 1.5em;
-            color: var(--light-color);
-            font-family: "700";
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            border-radius: 15px;
-            user-select: none;
+  //         li {
+  //           list-style: none;
+  //           padding: 0.5em 1em;
+  //           font-size: 1.5em;
+  //           color: var(--light-color);
+  //           font-family: "700";
+  //           cursor: pointer;
+  //           transition: all 0.3s ease-in-out;
+  //           border-radius: 15px;
+  //           user-select: none;
 
-            &:hover {
-              color: var(--dark-color);
-              background-color: var(--light-color);
-            }
-          }
-        }
-      }
+  //           &:hover {
+  //             color: var(--dark-color);
+  //             background-color: var(--light-color);
+  //           }
+  //         }
+  //       }
+  //     }
 
-      .mouse {
-        width: 5em;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  }
+  //     .mouse {
+  //       width: 5em;
+  //       position: absolute;
+  //       bottom: 0;
+  //       left: 50%;
+  //       transform: translate(-50%, -50%);
+  //     }
+  //   }
+  // }
 
   .small-header {
     width: 100%;

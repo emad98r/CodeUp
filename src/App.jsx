@@ -12,10 +12,12 @@ import Poster from "./Pages/Posters/Poster";
 import Websites from "./Pages/Websites/Websites";
 import OrderYourPlan from "./Pages/OrderYourPlan/OrderYourPlan";
 import LogoForm from "./Pages/LogoForm/LogoForm";
+import ScrollToTop from "./Components/ScrollToTop";
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

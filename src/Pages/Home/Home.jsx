@@ -6,7 +6,7 @@ import Section4 from "../../Sections/Section4/Section4";
 import Section5 from "../../Sections/Section5/Section5";
 import PostPage from "../../Sections/CommentsSection/CommentsSection";
 import Section7 from "../../Sections/Section7/Section7";
-
+import "./home.scss";
 function Home() {
   const samplePost = {
     id: "unique-post-id",
@@ -14,7 +14,7 @@ function Home() {
     content: "This is the content of the sample post.",
   };
   return (
-    <>
+    <div className="home">
       <Section1 />
       <Section2 />
       <Section3 />
@@ -23,7 +23,7 @@ function Home() {
       <Section6 />
       <Section7 />
       <PostPage post={samplePost} />
-    </>
+    </div>
   );
 }
 
